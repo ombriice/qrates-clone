@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#"><img class="logo" src="images/logo.svg" alt="homepage" /></a>
+
+      <div class="header__icons u-tablet-hidden">
+        <a href="#" class="icon" aria-label="search"
+          ><i class="fas fa-search"></i
+        ></a>
+        <a href="#" class="icon" aria-label="go to my cart"
+          ><i class="fas fa-shopping-cart"></i
+        ></a>
+      </div>
+
+      <button
+        class="toggle-btn u-tablet-hidden"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="menu"
+      ></button>
+
+      <div class="menu">
+        <nav class="nav" aria-label="primary navigation">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">records</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">discover</a>
+            </li>
+            <li class="nav__item">
+              <div class="subgrid-nav">
+                <button
+                  class="subgrid-nav__btn subgrid-nav__btn--underline"
+                  aria-expanded="false"
+                  aria-controls="for-artists"
+                >
+                  for artists
+                  <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <ul class="subgrid-nav__list" id="for-artists">
+                  <li class="subgrid-nav__item">
+                    <a href="#" class="subgrid-nav__link">Why Qrates?</a>
+                  </li>
+                  <li class="subgrid-nav__item">
+                    <a href="#" class="subgrid-nav__link">Crowdfunding</a>
+                  </li>
+                  <li class="subgrid-nav__item">
+                    <a href="#" class="subgrid-nav__link">Press & Sell</a>
+                  </li>
+                  <li class="subgrid-nav__item">
+                    <a href="#" class="subgrid-nav__link">Our Services</a>
+                  </li>
+                  <li class="subgrid-nav__item">
+                    <a href="#" class="subgrid-nav__link">Artist Toolkit</a>
+                  </li>
+                  <li class="subgrid-nav__item">
+                    <a href="#" class="subgrid-nav__link">Referral Program</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav__item">
+              <div class="subgrid-nav">
+                <button
+                  class="subgrid-nav__btn"
+                  aria-expanded="false"
+                  aria-controls="our-company"
+                >
+                  our company
+                  <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <ul class="subgrid-nav__list" id="our-company">
+                  <li class="subgrid-nav__item">
+                    <a href="#" class="subgrid-nav__link">About Qrates</a>
+                  </li>
+                  <li class="subgrid-nav__item">
+                    <a href="#" class="subgrid-nav__link">Careers</a>
+                  </li>
+                  <li class="subgrid-nav__item">
+                    <a href="#" class="subgrid-nav__link">Partners</a>
+                  </li>
+                  <li class="subgrid-nav__item">
+                    <a href="#" class="subgrid-nav__link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__icons u-desktop-hidden">
+          <a href="#" class="icon" aria-label="search"
+            ><i class="fas fa-search"></i
+          ></a>
+          <a href="#" class="icon" aria-label="go to my cart"
+            ><i class="fas fa-shopping-cart"></i
+          ></a>
+        </div>
+
+        <div class="socials header__socials u-tablet-hidden">
+          <a class="icon" href="#" aria-label="follow qrates on facebook"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a class="icon" href="#" aria-label="follow qrates on instagram"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a class="icon" href="#" aria-label="follow qrates on twitter"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+        </div>
+
+        <div class="header__sticker u-tablet-hidden">
+          <img src="images/nav-sticker.png" alt="" />
+        </div>
+
+        <div class="header__btn">
+          <a href="#" class="btn">log in</a>
+          <a href="#" class="btn btn--dark">make a record</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="text-boxed">why qrates</h1>
+          <h2 class="hero__heading">
+            Your music on vinyl. <span>Without the barriers.</span>
+          </h2>
+          <p class="hero__subheading">
+            Full-service pressing, a global retail network, customer support —
+            and you keep up to 85% of profits. ↓
+          </p>
+        </div>
+        <img class="hero__img-first" src="images/hero-img.png" alt="" />
+        <img class="hero__img-second" src="images/hero-img2.png" alt="" />
+        <img class="hero__img-third" src="images/hero-img3.png" alt="" />
+      </section>
+      
+
+      <section class="projects">
+        <div class="projects__header grid-content u-tablet-hidden">
+          <h2 class="grid-content__title">Find your fit</h2>
+          <p class="grid-content__desc">
+            Choose the best Qrates project type to suit your needs ↓
+          </p>
+        </div>
+
+        <div class="grid-container projects__container">
+          <div
+            class="grid-container__content grid-container__content--bg-yellow"
+          >
+            <img class="grid-container__img projects__img" src="images/crowdfunding.png" alt="" />
+            <p class="text-boxed">no risk, no waste</p>
+            <div class="grid-content">
+              <h3 class="grid-content__title">Crowdfunding</h3>
+              <p class="grid-content__desc">
+                Rally your fans and gather pledges. Press the exact number of
+                records you need, without having to pay anything upfront.
+              </div>
+            </p>
+            <a href="#" class="btn btn--dark grid-container__btn"
+              >learn more</a
+            >
+          </div>
+          <div class="grid-container__content grid-container__content--bg-grey">
+            <img class="grid-container__img projects__img" src="images/press_sell.png" alt="" />
+            <p class="text-boxed">get into it</p>
+            <div class="grid-content">
+              <h3 class="grid-content__title">Press & Sell</h3>
+              <p class="grid-content__desc">
+                Launch your record, sooner. Take pre-orders from fans and we’ll
+                take care of the rest.
+              </div>
+            </p>
+            <a href="#" class="btn btn--dark grid-container__btn"
+              >learn more</a
+            >
+          </div>
+        </div>
+
+        <div class="projects__footer">
+          <p class="text text--white projects__footer-text">Just after straight up vinyl pressing? We do that too. Records are shipped in bulk to wherever you need.</p>
+          <a href="#" class="btn projects__footer-btn">start a press only project</a>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="grid-container services__container">
+          <div
+            class="grid-container__content"
+          >
+            <h2 class="text-boxed">our services</h2>
+            <div class="grid-content">
+              <h3 class="grid-content__title grid-content__title--outlined">you make music.<span class="d-block"> we do the rest.</span></h3>
+              <p class="grid-content__desc">
+                We want you to be able to put all your energy into the creative side of making music. So we created a one-stop shop for everything else.
+              </div>
+            </p>
+            <a href="#" class="btn btn--white grid-container__btn"
+              >learn more</a
+            >
+            <img class="grid-container__img services__img" src="images/our_services.jpg" alt="" />
+          </div>
+
+          <div class="grid-container__content services__info">
+            <p class="service">Making Records</p>
+            <details class="services__detail">
+              <summary class="services__summary text">Design & Customization<i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+              <p class="text">With over 39 colors and over 120,000 variations, control what your record will look like.</p>
+              <a href="" class="btn">learn more →</a>
+          </details>
+          <details class="services__detail">
+            <summary class="services__summary text">Mastering<i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+            <p class="text">With over 39 colors and over 120,000 variations, control what your record will look like.</p>
+            <a href="" class="btn">learn more →</a>
+        </details>
+        <details class="services__detail">
+          <summary class="services__summary text">Atwork Assistance<i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+          <p class="text">With over 39 colors and over 120,000 variations, control what your record will look like.</p>
+          <a href="" class="btn">learn more →</a>
+      </details>
+      <details class="services__detail">
+        <summary class="services__summary text">Pressing<i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+        <p class="text">With over 39 colors and over 120,000 variations, control what your record will look like.</p>
+        <a href="" class="btn">learn more →</a>
+    </details>
+  
+    <p class="service">Storage  & Distribution</p>
+            <details class="services__detail">
+              <summary class="services__summary text">Free Storage<i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+              <p class="text">With over 39 colors and over 120,000 variations, control what your record will look like.</p>
+              <a href="" class="btn">learn more →</a>
+          </details>
+          <details class="services__detail">
+            <summary class="services__summary text">Sell With Qrates<i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+            <p class="text">With over 39 colors and over 120,000 variations, control what your record will look like.</p>
+            <a href="" class="btn">learn more →</a>
+        </details>
+        <details class="services__detail">
+          <summary class="services__summary text">Digital Downloads<i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+          <p class="text">With over 39 colors and over 120,000 variations, control what your record will look like.</p>
+          <a href="" class="btn">learn more →</a>
+      </details>
+      <details class="services__detail">
+        <summary class="services__summary text">Retail Distributon<i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+        <p class="text">With over 39 colors and over 120,000 variations, control what your record will look like.</p>
+        <a href="" class="btn">learn more →</a>
+    </details>
+   
+    <p class="service">Support</p>
+            <details class="services__detail">
+              <summary class="services__summary text">Custumor Support<i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+              <p class="text">With over 39 colors and over 120,000 variations, control what your record will look like.</p>
+              <a href="" class="btn">learn more →</a>
+          </details>
+          <details class="services__detail">
+            <summary class="services__summary text">Artist Support<i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+            <p class="text">With over 39 colors and over 120,000 variations, control what your record will look like.</p>
+            <a href="" class="btn">learn more →</a>
+        </details>
+        
+          </div>
+        </div>
+      </section>
+
+      <section class="network">
+        <div class="grid-container network__container">
+          <div
+            class="grid-container__content grid-container__content--bg-dark"
+          >
+            <img class="grid-container__img network__img-1" src="images/store_logo.png" alt="" />
+            <p class="text-boxed">retail network</p>
+            <div class="grid-content grid-content--white">
+              <h3 class="grid-content__title">Worldwide distro,<span class="d-block">demystified.</span></h3>
+              <p class="grid-content__desc">
+                Get direct access to over 150 of our retail partners across the globe.
+              </div>
+            </p>
+          </div>
+          <div
+            class="grid-container__content grid-container__content--bg-purple"
+          >
+            <img class="grid-container__img network__img-2" src="images//support.jpg" alt="" />
+            <p class="text-boxed">custumor support</p>
+            <div class="grid-content">
+              <h3 class="grid-content__title">Here to help,<span class="d-block">whenever you need it.</span></h3>
+              <p class="grid-content__desc">
+                Whether you’re an artist in the middle of product, or a fan with questions about your order; our team is here to help.
+              </div>
+            </p>
+          </div>
+          </div>
+      </section>
+
+      <section class="community">
+        <div class="community__container">
+          <div class="grid-container__content">
+            <h2 class="text-boxed">community</h2>
+            <div class="grid-content">
+              <h3 class="grid-content__title">Join a growing community.</h3>
+              <p class="grid-content__desc">
+                We’re building a home for the next generation of vinyl lovers.
+                Get in front of fans, connect with artists, labels and stores.
+              </div>
+              <a href="#" class="btn btn--white">browse artists</a>
+          </div>
+          <div class="community__members">
+            <ul class="community__list">
+              <li class="community__item"><a href="#" class="community__link"><img class="member__img" src="images/community.jpg" alt=""></a></li>
+              <li class="community__item"><a href="#" class="community__link"><img class="member__img" src="images/community.jpg" alt=""></a></li>
+              <li class="community__item"><a href="#" class="community__link"><img class="member__img" src="images/community.jpg" alt=""></a></li>
+              <li class="community__item"><a href="#" class="community__link"><img class="member__img" src="images/community.jpg" alt=""></a></li>
+              <li class="community__item"><a href="#" class="community__link"><img class="member__img" src="images/community.jpg" alt=""></a></li>
+              <li class="community__item"><a href="#" class="community__link"><img class="member__img" src="images/community.jpg" alt=""></a></li>
+              <li class="community__item"><a href="#" class="community__link"><img class="member__img" src="images/community.jpg" alt=""></a></li>
+              <li class="community__item community__item--last">
+                <div>
+                  <p>don't miss a release</p>
+                  <a href="#" class="btn community__link">follow @qrates on instagram</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <aside class="slider">
+        <ul class="slider__list">
+          <li class="slider__item"><a href="#" class="slider__link">chilled cow</a> is on qrates</li>
+          <li class="slider__item"><a href="#" class="slider__link">sol</a> is on qrates</li>
+          <li class="slider__item"><a href="#" class="slider__link">eminem</a> is on qrates</li>
+          <li class="slider__item"><a href="#" class="slider__link">chillhop</a> is on qrates</li>
+          <li class="slider__item"><a href="#" class="slider__link">trap nation</a> is on qrates</li>
+          <li class="slider__item"><a href="#" class="slider__link">the bootleg boy</a> is on qrates</li>
+          <li class="slider__item"><a href="#" class="slider__link">drake</a> is on qrates</li>
+        </ul>
+      </aside>
+      <section class="artists">
+        <div class="artists__container artists__container--bg-yellow">
+          <!-- sol's image-->
+          <img id="solImg" class="artists__img" src="images/artists.jpg" alt="sol">
+          <!-- mason's image -->
+          <img id="masonImg" class="artists__img hidden" src="images/artist_mason.jpg" alt="mason lieberman">
+          <h2 class="text-boxed">artists on qrates</h2>
+          <!-- sol's quote -->
+          <fieldset class="artists__quotation" id="sol" role="tabpanel" >
+            <blockquote>
+              <p class="quote">The response was overwhelming. It made me wonder why I hadn't pressed any records on vinyl before now. It felt like something that people had been waiting for for a long time.</p>
+            </blockquote>
+            <figcaption class="artist-name"><a class="btn" href="#">—SOL</a></figcaption>
+          </fieldset>
+          <!-- mason's quote-->
+          <fieldset hidden class="artists__quotation" id="mason" role="tabpanel">
+            <blockquote>
+              <p class="quote">We hit our goal of 100 Records in the first 32 minutes. And I have to be honest, I didn't expect that. There's no world where I would have thought that we were about to sell north of 2800 copies.</p>
+            </blockquote>
+            <figcaption class="artist-name"><a class="btn" href="#">—Mason Lieberman</a></figcaption>
+          </fieldset>
+
+          <div class="numbers-indicators" role="tablist" aria-label="artists list">
+            <button aria-selected="true" aria-controls="sol" role="tab" aria-label="sol the artist"  data-img='solImg' data-clr="yellow">1</button>
+            <button aria-selected="false" aria-controls="mason" role="tab" aria-label="Mason Lieberman the artist"  data-img="masonImg" data-clr="purple">2</button>
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="studio">
+        <div
+            class="grid-container__content grid-container__content--bg-dark"
+          >
+          <h2 class="text-boxed">vinyl studio</h2>
+            <div class="grid-content grid-content--white">
+              <h3 class="grid-content__title">Make it real with
+                <span class="d-block">Qrates Vinyl Studio</span></h3>
+              <p class="grid-content__desc">
+                Design the look and feel of your vinyl and use the profit calculator to immediately see how much your project will cost, and how much you’ll earn.
+              </div>
+            </p>
+            <img class="grid-container__img studio__img" src="images/sample_black_country_disco-233bbc85.png" alt="" />
+            <a href="#" class="btn btn--yellow grid-container__btn"
+              >try it now</a
+            >
+          </div>
+      </section>
+      
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container footer__container--black">
+        <nav class="footer-nav" aria-label="footer navigation">
+          <ul class="footer-nav__list">
+          <li class="footer-nav__item-header">for artists</li>
+          <li><a class="footer-nav__link">Why Qrates?</a></li>
+          <li><a class="footer-nav__link">Crowdfunding</a></li>
+          <li><a class="footer-nav__link">Press & Sell</a></li>
+          <li><a class="footer-nav__link">Our Services</a></li>
+          <li><a class="footer-nav__link">Artist Toolkit</a></li>
+          <li><a class="footer-nav__link">Referral Program</a></li>
+        </ul>
+
+          <ul class="footer-nav__list">
+          <li class="footer-nav__item-header">for fans</li>
+          <li><a class="footer-nav__link">Discover</a></li>
+          <li><a class="footer-nav__link">Records</a></li>
+          <li><a class="footer-nav__link">Stories</a></li>
+          <li><a class="footer-nav__link">Lists</a></li>
+          <li><a class="footer-nav__link">Artists & Labels</a></li>
+        </ul>
+
+          <ul class="footer-nav__list">
+          <li class="footer-nav__item-header">our company</li>
+          <li><a class="footer-nav__link">About Qrates</a></li>
+          <li><a class="footer-nav__link">Careers</a></li>
+          <li><a class="footer-nav__link">Partners</a></li>
+        </ul>
+
+          <ul class="footer-nav__list">
+          <li class="footer-nav__item-header">help</li>
+          <li><a class="footer-nav__link">Support Center</a></li>
+          <li><a class="footer-nav__link">Contact Us</a></li>
+          <li><a class="footer-nav__link">Returns</a></li>
+          <li><a class="footer-nav__link">Shipping</a></li>
+        </ul>
+        </nav>
+
+        <div class="socials footer__socials">
+          <a class="icon icon--white" href="#" aria-label="follow qrates on facebook"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a class="icon icon--white" href="#" aria-label="follow qrates on instagram"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a class="icon icon--white" href="#" aria-label="follow qrates on twitter"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+        </div>
+        
+        <img src="images/footer.svg" alt="" class="footer__img">
+
+        <div class="legal__nav">
+          <ul class="legal__list">
+            <li><a href="#" class="legal__link">Terms of Service</a></li>
+            <li><a href="#" class="legal__link">Privacy Policy</a></li>
+            <li><a href="#" class="legal__link">Legal Information</a></li>
+          </ul>
+        </div>
+        <p class="copyright"><small>© TDMS Inc.</small></p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
